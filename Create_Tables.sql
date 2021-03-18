@@ -52,7 +52,7 @@ PRIMARY KEY (Order_ID),
 CONSTRAINT Order_header_fkey_Customer_ID FOREIGN KEY (Customer_ID) REFERENCES Customer (Customer_ID));
 
 CREATE TABLE Security_header (Ticker_ID VARCHAR(20) NOT NULL,
-Security_name VARCHAR (30),
+Security_name VARCHAR (50),
 Account_number INTEGER,
 Order_ID INTEGER,
 Killswitch BOOLEAN,
