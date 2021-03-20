@@ -81,7 +81,7 @@ Price_timestamp TIME,
 Ask_price DECIMAL,
 Bid_price DECIMAL,
 Trade_volume NUMERIC,
-Ticker_ID VARCHAR(4),
+Ticker_ID VARCHAR(20),
 PRIMARY KEY (Timeprice_ID, Ticker_ID),
 CONSTRAINT Moving_price_pkey_Ticker_ID FOREIGN KEY (Ticker_ID) REFERENCES Security_header (Ticker_ID));
 
@@ -93,7 +93,7 @@ Market_Close TIME,
 PRIMARY KEY (Exchange_ID));
 
 CREATE TABLE Listed_on (
-Ticker_ID VARCHAR(4) NOT NULL,
+Ticker_ID VARCHAR(20) NOT NULL,
 Exchange_ID VARCHAR(30) NOT NULL,
 PRIMARY KEY (Ticker_ID, Exchange_ID),
 CONSTRAINT Listed_on_pkey_Ticker_ID FOREIGN KEY (Ticker_ID) REFERENCES Security_header (Ticker_ID),
