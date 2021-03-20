@@ -18,7 +18,7 @@ DROP TABLE IF EXISTS Customer;
 
 CREATE TABLE Customer (Customer_ID INTEGER NOT NULL,
 Customer_name VARCHAR (50) NOT NULL,
-SSN CHAR(9) NOT NULL,
+SSN CHAR(11) NOT NULL,
 Phone_number VARCHAR(12),  /*Varchar(10) is sufficient*/
 Email_address VARCHAR(200),
 Address_line_1 VARCHAR (200),
