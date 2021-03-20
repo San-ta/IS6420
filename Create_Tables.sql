@@ -93,7 +93,7 @@ Market_Close TIME,
 PRIMARY KEY (Exchange_ID));
 
 CREATE TABLE Listed_on (
-Ticker_ID VARCHAR(4) NOT NULL,
+Ticker_ID VARCHAR(4) NOT NULL, /*shouldn't the Ticker_ID in listerd_on match Ticker_ID in security_header? The constraints are different for both. shouldn't they be VARCHAR 20 in both?*/
 Exchange_ID VARCHAR(30) NOT NULL,
 PRIMARY KEY (Ticker_ID, Exchange_ID),
 CONSTRAINT Listed_on_pkey_Ticker_ID FOREIGN KEY (Ticker_ID) REFERENCES Security_header (Ticker_ID),
