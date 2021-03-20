@@ -76,117 +76,107 @@ INSERT INTO public.investment_account (account_number,balance,premium_account,cu
 INSERT INTO public.investment_account (account_number,balance,premium_account,customer_id) VALUES (22,20915.43,false,3);
 INSERT INTO public.investment_account (account_number,balance,premium_account,customer_id) VALUES (23,127287.51,true,2);
 INSERT INTO public.investment_account (account_number,balance,premium_account,customer_id) VALUES (24,494119.09,false,1);
-
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (1,'19:03:00',51,7),
-	 (2,'14:59:00',58,3),
-	 (3,'03:15:00',55,8),
-	 (4,'20:24:00',4,6),
-	 (5,'20:40:00',97,22),
-	 (6,'16:48:00',63,22),
-	 (7,'16:03:00',80,4),
-	 (8,'00:22:00',62,2),
-	 (9,'01:53:00',38,6),
-	 (10,'12:40:00',41,12);
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (11,'03:08:00',40,13),
-	 (12,'21:41:00',71,22),
-	 (13,'04:49:00',11,21),
-	 (14,'09:12:00',55,9),
-	 (15,'21:16:00',49,15),
-	 (16,'01:30:00',11,18),
-	 (17,'17:29:00',44,22),
-	 (18,'23:09:00',98,3),
-	 (19,'12:35:00',33,24),
-	 (20,'14:40:00',81,9);
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (21,'17:52:00',27,21),
-	 (22,'01:30:00',58,9),
-	 (23,'12:44:00',19,8),
-	 (24,'08:56:00',78,16),
-	 (25,'11:26:00',76,3),
-	 (26,'05:53:00',84,9),
-	 (27,'08:07:00',87,6),
-	 (28,'09:09:00',27,18),
-	 (29,'04:36:00',96,19),
-	 (30,'12:46:00',17,11);
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (31,'12:49:00',20,7),
-	 (32,'23:00:00',78,18),
-	 (33,'11:16:00',62,4),
-	 (34,'10:42:00',48,24),
-	 (35,'05:24:00',19,8),
-	 (36,'08:07:00',43,24),
-	 (37,'05:35:00',99,8),
-	 (38,'05:26:00',19,3),
-	 (39,'23:57:00',40,12),
-	 (40,'13:45:00',56,3);
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (41,'08:40:00',79,19),
-	 (42,'20:04:00',2,22),
-	 (43,'00:29:00',6,8),
-	 (44,'01:42:00',100,2),
-	 (45,'23:06:00',73,7),
-	 (46,'18:20:00',20,3),
-	 (47,'06:01:00',74,11),
-	 (48,'17:34:00',64,24),
-	 (49,'10:43:00',25,6),
-	 (50,'19:59:00',64,12);
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (51,'12:14:00',96,21),
-	 (52,'21:56:00',94,7),
-	 (53,'09:33:00',63,8),
-	 (54,'04:15:00',76,7),
-	 (55,'20:01:00',81,18),
-	 (56,'14:23:00',29,21),
-	 (57,'23:03:00',89,11),
-	 (58,'10:37:00',63,15),
-	 (59,'23:23:00',65,14),
-	 (60,'16:03:00',25,14);
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (61,'09:36:00',34,3),
-	 (62,'10:43:00',38,13),
-	 (63,'10:55:00',77,8),
-	 (64,'10:11:00',19,22),
-	 (65,'17:53:00',72,21),
-	 (66,'05:19:00',29,15),
-	 (67,'09:29:00',59,9),
-	 (68,'19:05:00',8,14),
-	 (69,'10:16:00',75,3),
-	 (70,'03:45:00',57,19);
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (71,'07:20:00',77,13),
-	 (72,'05:17:00',76,3),
-	 (73,'03:51:00',57,5),
-	 (74,'06:56:00',6,1),
-	 (75,'05:12:00',82,16),
-	 (76,'21:05:00',17,9),
-	 (77,'16:29:00',10,2),
-	 (78,'07:34:00',64,18),
-	 (79,'03:04:00',20,11),
-	 (80,'04:16:00',15,3);
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (81,'14:55:00',53,2),
-	 (82,'19:11:00',89,24),
-	 (83,'21:41:00',76,12),
-	 (84,'06:46:00',87,5),
-	 (85,'12:15:00',16,9),
-	 (86,'22:05:00',54,11),
-	 (87,'08:56:00',94,21),
-	 (88,'12:55:00',82,7),
-	 (89,'01:46:00',31,12),
-	 (90,'19:18:00',96,22);
-INSERT INTO public.order_header (order_id,order_time,quantity,customer_id) VALUES
-	 (91,'05:17:00',76,5),
-	 (92,'08:23:00',60,19),
-	 (93,'11:04:00',98,20),
-	 (94,'05:24:00',94,2),
-	 (95,'16:52:00',73,4),
-	 (96,'05:03:00',51,5),
-	 (97,'15:24:00',49,3),
-	 (98,'19:47:00',4,14),
-	 (99,'08:28:00',62,22),
-	 (100,'10:47:00',39,4);
+ 
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (1,'19:03:00',51,false,7);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (2,'14:59:00',58,true,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (3,'03:15:00',55,true,8);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (4,'20:24:00',4,true,6);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (5,'20:40:00',97,false,22);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (6,'16:48:00',63,true,22);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (7,'16:03:00',80,true,4);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (8,'00:22:00',62,true,2);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (9,'01:53:00',38,false,6);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (10,'12:40:00',41,false,12);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (11,'03:08:00',40,true,13);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (12,'21:41:00',71,true,22);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (13,'04:49:00',11,false,21);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (14,'09:12:00',55,false,9);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (15,'21:16:00',49,false,15);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (16,'01:30:00',11,false,18);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (17,'17:29:00',44,true,22);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (18,'23:09:00',98,false,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (19,'12:35:00',33,true,24);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (20,'14:40:00',81,false,9);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (21,'17:52:00',27,false,21);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (22,'01:30:00',58,false,9);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (23,'12:44:00',19,true,8);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (24,'08:56:00',78,false,16);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (25,'11:26:00',76,true,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (26,'05:53:00',84,false,9);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (27,'08:07:00',87,true,6);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (28,'09:09:00',27,false,18);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (29,'04:36:00',96,true,19);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (30,'12:46:00',17,false,11);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (31,'12:49:00',20,true,7);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (32,'23:00:00',78,false,18);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (33,'11:16:00',62,false,4);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (34,'10:42:00',48,false,24);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (35,'05:24:00',19,false,8);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (36,'08:07:00',43,false,24);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (37,'05:35:00',99,false,8);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (38,'05:26:00',19,false,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (39,'23:57:00',40,true,12);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (40,'13:45:00',56,true,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (41,'08:40:00',79,true,19);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (42,'20:04:00',2,true,22);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (43,'00:29:00',6,false,8);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (44,'01:42:00',100,true,2);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (45,'23:06:00',73,false,7);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (46,'18:20:00',20,false,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (47,'06:01:00',74,true,11);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (48,'17:34:00',64,false,24);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (49,'10:43:00',25,false,6);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (50,'19:59:00',64,false,12);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (51,'12:14:00',96,true,21);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (52,'21:56:00',94,false,7);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (53,'09:33:00',63,false,8);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (54,'04:15:00',76,true,7);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (55,'20:01:00',81,false,18);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (56,'14:23:00',29,false,21);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (57,'23:03:00',89,true,11);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (58,'10:37:00',63,false,15);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (59,'23:23:00',65,false,14);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (60,'16:03:00',25,true,14);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (61,'09:36:00',34,true,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (62,'10:43:00',38,true,13);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (63,'10:55:00',77,false,8);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (64,'10:11:00',19,true,22);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (65,'17:53:00',72,false,21);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (66,'05:19:00',29,true,15);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (67,'09:29:00',59,false,9);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (68,'19:05:00',8,false,14);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (69,'10:16:00',75,false,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (70,'03:45:00',57,false,19);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (71,'07:20:00',77,false,13);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (72,'05:17:00',76,false,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (73,'03:51:00',57,true,5);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (74,'06:56:00',6,false,1);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (75,'05:12:00',82,false,16);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (76,'21:05:00',17,false,9);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (77,'16:29:00',10,false,2);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (78,'07:34:00',64,true,18);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (79,'03:04:00',20,true,11);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (80,'04:16:00',15,true,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (81,'14:55:00',53,true,2);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (82,'19:11:00',89,true,24);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (83,'21:41:00',76,false,12);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (84,'06:46:00',87,false,5);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (85,'12:15:00',16,true,9);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (86,'22:05:00',54,true,11);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (87,'08:56:00',94,true,21);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (88,'12:55:00',82,true,7);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (89,'01:46:00',31,false,12);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (90,'19:18:00',96,true,22);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (91,'05:17:00',76,false,5);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (92,'08:23:00',60,true,19);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (93,'11:04:00',98,true,20);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (94,'05:24:00',94,false,2);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (95,'16:52:00',73,false,4);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (96,'05:03:00',51,false,5);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (97,'15:24:00',49,true,3);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (98,'19:47:00',4,true,14);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (99,'08:28:00',62,true,22);
+INSERT INTO public.order_header (order_id,order_time,quantity,activity,customer_id) VALUES (100,'10:47:00',39,true,4);
 
 INSERT INTO public.security_header (ticker_id,security_name,account_number,order_id,killswitch) VALUES ('GME','Gamestop',24,1,true);
 INSERT INTO public.security_header (ticker_id,security_name,account_number,order_id,killswitch) VALUES ('MHO','M/I Homes, Inc.',6,2,false);

@@ -2,7 +2,6 @@
 --Yo you can edit it online
 ---check 1
 --blah blah blah
-
 DROP TABLE IF EXISTS Listed_on;
 DROP TABLE IF EXISTS Exchange;
 DROP TABLE IF EXISTS Moving_price;
@@ -47,6 +46,7 @@ CONSTRAINT Investment_account_fkey_Customer_ID FOREIGN KEY (Customer_ID) REFEREN
 CREATE TABLE Order_header (Order_ID INTEGER NOT NULL,
 Order_time TIME,
 Quantity INTEGER,
+activity BOOLEAN,
 Customer_ID INTEGER,
 PRIMARY KEY (Order_ID),
 CONSTRAINT Order_header_fkey_Customer_ID FOREIGN KEY (Customer_ID) REFERENCES Customer (Customer_ID));
