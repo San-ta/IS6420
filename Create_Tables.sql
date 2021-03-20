@@ -1,8 +1,8 @@
 --Robinhood Data Tables
 --Yo you can edit it online
 ---check 1
-
 --blah blah blah
+
 DROP TABLE IF EXISTS Listed_on;
 DROP TABLE IF EXISTS Exchange;
 DROP TABLE IF EXISTS Moving_price;
@@ -38,7 +38,7 @@ PRIMARY KEY (External_Account_ID),
 CONSTRAINT External_bank_account_fkey_Customer_ID FOREIGN KEY (Customer_ID) REFERENCES Customer (Customer_ID));
 
 CREATE TABLE Investment_account (Account_number INTEGER NOT NULL,
-Balance MONEY,
+Balance DECIMAL,
 Premium_account BOOLEAN,
 Customer_ID INTEGER,
 PRIMARY KEY (Account_number),
@@ -52,7 +52,7 @@ PRIMARY KEY (Order_ID),
 CONSTRAINT Order_header_fkey_Customer_ID FOREIGN KEY (Customer_ID) REFERENCES Customer (Customer_ID));
 
 CREATE TABLE Security_header (Ticker_ID VARCHAR(20) NOT NULL,
-Security_name VARCHAR (50),
+Security_name VARCHAR (100),
 Account_number INTEGER,
 Order_ID INTEGER,
 Killswitch BOOLEAN,
@@ -60,7 +60,7 @@ PRIMARY KEY (Ticker_ID),
 CONSTRAINT Security_header_fkey_Account_number FOREIGN KEY (Account_number) REFERENCES Investment_account (Account_number),
 CONSTRAINT Security_header_fkey_Order_ID FOREIGN KEY (Order_ID) REFERENCES Order_header (Order_ID));
 
-CREATE TABLE ETF (E_Ticker_ID VARCHAR(4) NOT NULL,
+CREATE TABLE ETF (E_Ticker_ID VARCHAR(20) NOT NULL,
 PRIMARY KEY (E_Ticker_ID),
 CONSTRAINT ETF_pkey_E_Ticker_ID FOREIGN KEY (E_Ticker_ID) REFERENCES Security_header (Ticker_ID));
 
@@ -78,8 +78,8 @@ CONSTRAINT Crypto_pkey_C_Ticker_ID FOREIGN KEY (C_Ticker_ID) REFERENCES Security
 
 CREATE TABLE Moving_price (Timeprice_ID VARCHAR (30) NOT NULL,
 Price_timestamp TIME,
-Ask_price MONEY,
-Bid_price MONEY,
+Ask_price DECIMAL,
+Bid_price DECIMAL,
 Trade_volume NUMERIC,
 Ticker_ID VARCHAR(4),
 PRIMARY KEY (Timeprice_ID, Ticker_ID),
