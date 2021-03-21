@@ -37,7 +37,36 @@ FROM customer c
 	INNER JOIN investment_account ia 
 		ON ia.customer_id = c.customer_id 
 WHERE balance >100000
-ORDER BY balance DESC;      
-				      
+ORDER BY balance DESC;  
+				   
+--Query to understand whether a security is ETF, Stock, Mutual fund, Crypto
+SELECT sh.ticker_id, sh.security_name, 
+CASE WHEN sh.ticker_id = e.e_ticker_id THEN 'ETF'
+	 WHEN sh.ticker_id = s.s_ticker_id THEN 'Stock' 
+ 	 WHEN sh.ticker_id = mf.m_ticker_id THEN 'Mutual Fund' 
+ 	 WHEN sh.ticker_id = cy.c_ticker_id THEN 'Crypto' 
+ 	 ELSE 'Other'
+ 	 END AS security_type
+FROM security_header sh 
+	LEFT JOIN etf e 
+		ON e.e_ticker_id = sh.ticker_id 
+	LEFT JOIN stock s 
+		ON s.s_ticker_id = sh.ticker_id 
+	LEFT JOIN mutual_fund mf 
+		ON mf.m_ticker_id = sh.ticker_id 
+	LEFT JOIN crypto cy 
+		ON cy.c_ticker_id = sh.ticker_id 
+GROUP BY sh.ticker_id, sh.security_name, e.e_ticker_id, s.s_ticker_id, mf.m_ticker_id, cy.c_ticker_id ;			
+
+-- Query to understand whether a security is ETF or not
+SELECT sh.ticker_id, sh.security_name, 
+CASE WHEN sh.ticker_id = e.e_ticker_id THEN 'ETF'
+	 ELSE 'Other'
+ 	 END AS security_type
+FROM security_header sh 
+	LEFT JOIN etf e 
+		ON e.e_ticker_id = sh.ticker_id 
+GROUP BY sh.ticker_id, sh.security_name, e.e_ticker_id; 
+
 				    
 				      
