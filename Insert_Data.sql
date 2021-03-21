@@ -8,7 +8,7 @@ INSERT INTO public.customer (customer_id,customer_name,ssn,phone_number,email_ad
 	 (7,'Way Bliven','690-97-9351','563-373-8783','wbliven6@redcross.org','6590 Gale Terrace','Davenport','IA','52809','US','US','1988-09-13'),
 	 (8,'Bianka Spohr','201-29-5071','971-303-2726','bspohr7@goodreads.com','951 Sunbrook Avenue','Portland','OR','97240','US','US','1988-04-20'),
 	 (9,'Iosep Sickamore','759-49-0123','801-407-7791','isickamore8@last.fm','13 Graedel Parkway','Salt Lake City','UT','84130','US','US','1987-08-31'),
-	 (10,'Herc Daveley','           ','907-918-3495','hdaveley9@cocolog-nifty.com','','Anchorage','AK','99512','US','US','1992-06-01'),
+	 (10,'Herc Daveley','459-29-0124','907-918-3495','hdaveley9@cocolog-nifty.com','','Anchorage','AK','99512','US','US','1992-06-01'),
 	 (11,'Jessalin Dufall','779-17-0428','773-772-8679','jdufalla@histats.com','21556 Roxbury Circle','Chicago','IL','60624','US','US','1992-03-31'),
 	 (12,'Elihu Woolatt','486-11-3113','810-132-2403','ewoolattb@squidoo.com','826 Norway Maple Court','Flint','MI','48550','US','US','1992-08-17'),
 	 (13,'Nanni Brown','661-48-3463','602-770-6292','nbrownc@boston.com','67854 Golf Point','Chandler','AZ','85246','US','US','1988-05-22'),
