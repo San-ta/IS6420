@@ -29,3 +29,15 @@ FROM security_header sh
 		ON oh.order_id = sh.order_id 
 GROUP BY sh.ticker_id, sh.security_name 
 ORDER BY total_quantity DESC; 
+
+				      
+-- Query to understand successful investors
+SELECT c.customer_name, ia.balance 
+FROM customer c 
+	INNER JOIN investment_account ia 
+		ON ia.customer_id = c.customer_id 
+WHERE balance >100000
+ORDER BY balance DESC;      
+				      
+				    
+				      
