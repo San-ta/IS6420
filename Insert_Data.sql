@@ -1,3 +1,5 @@
+--Robinhood insert data
+
 INSERT INTO public.customer (customer_id,customer_name,ssn,phone_number,email_address,address_line_1,city,state_province,postal_code,country,citizenship,dob) VALUES
 	 (1,'Tobye Chasmar','882404387','9375609369','tchasmar0@japanpost.jp','79792 Oakridge Court','Dayton','OH','45414','US','US','1987-05-16'),
 	 (2,'Tobiah Wildash','678411706','7064150443','twildash1@weather.com','79 Welch Street','Augusta','GA','30911','US','US','1988-07-17'),
