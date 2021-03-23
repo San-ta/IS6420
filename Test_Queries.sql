@@ -66,7 +66,16 @@ CASE WHEN sh.ticker_id = e.e_ticker_id THEN 'ETF'
 FROM security_header sh 
 	LEFT JOIN etf e 
 		ON e.e_ticker_id = sh.ticker_id 
-GROUP BY sh.ticker_id, sh.security_name, e.e_ticker_id; 
+GROUP BY sh.ticker_id, sh.security_name, e.e_ticker_id;
+				      
+---Query to understand which securities are listed on NYSE
+SELECT e2.exchange_id, e2.exchange_name, sh.security_name 
+FROM listed_on lo
+	INNER JOIN exchange e2 
+		ON e2.exchange_id = lo.exchange_id 
+	INNER JOIN security_header sh 
+		ON sh.ticker_id = lo.ticker_id 
+WHERE exchange_name = 'NYSE';
 
 				    
 				      
